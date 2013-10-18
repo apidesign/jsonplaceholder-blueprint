@@ -1,5 +1,5 @@
 FORMAT: X-1A
-HOST: https://alpha-api.app.net
+HOST: https://www.google.com
 
 # JSONPlaceholder
 
@@ -10,6 +10,9 @@ HOST: https://alpha-api.app.net
 - **TODO** - Photos: http://jsonplaceholder.typicode.com/photos/1
 - **TODO** - Users: http://jsonplaceholder.typicode.com/users/1
 - **TODO** - Todos: http://jsonplaceholder.typicode.com/todos/1
+
+### Credits
+Inspired by [JSONPlaceholder](https://github.com/typicode/jsonplaceholder)
 
 # Group Posts
 
@@ -157,5 +160,4 @@ TODO: Todos Resource
 
 
 
-# Group Credits
-Inspired by [JSONPlaceholder](https://github.com/typicode/jsonplaceholder)
+
