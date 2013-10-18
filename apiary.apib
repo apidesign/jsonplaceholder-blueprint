@@ -5,11 +5,11 @@ HOST: https://www.google.com
 
 ### Available resources:
 - Posts: http://jsonplaceholder.apiary.io/posts/1
-- **TODO** - Comments: http://jsonplaceholder.typicode.com/comments/1
-- **TODO** - Albums: http://jsonplaceholder.typicode.com/albums/1
-- **TODO** - Photos: http://jsonplaceholder.typicode.com/photos/1
-- **TODO** - Users: http://jsonplaceholder.typicode.com/users/1
-- **TODO** - Todos: http://jsonplaceholder.typicode.com/todos/1
+- **TODO** - Comments: http://jsonplaceholder.apiary.io/comments/1
+- **TODO** - Albums: http://jsonplaceholder.apiary.io/albums/1
+- **TODO** - Photos: http://jsonplaceholder.apiary.io/photos/1
+- **TODO** - Users: http://jsonplaceholder.apiary.io/users/1
+- **TODO** - Todos: http://jsonplaceholder.apiary.io/todos/1
 
 ### Credits
 Inspired by [JSONPlaceholder](https://github.com/typicode/jsonplaceholder)
