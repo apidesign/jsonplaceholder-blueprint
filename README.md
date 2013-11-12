@@ -1,4 +1,4 @@
-## jsonplaceholder-blueprint
+## jsonplaceholder-blueprint [![Travis-CI Build Status](https://travis-ci.org/gdumitrescu/jsonplaceholder-blueprint.png?branch=master)](https://travis-ci.org/gdumitrescu/jsonplaceholder-blueprint)
 
 Apiary API Blueprint for simple mock REST API Server. 
 
