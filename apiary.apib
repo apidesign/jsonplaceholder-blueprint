@@ -137,26 +137,71 @@ Deleting a resource
         { "message" : "deleted" }
     ```
 
-# Group Comments
-TODO: Comments Resource
-    http://jsonplaceholder.apiary.io/v1/comments/1
-
 # Group Albums
 TODO: Albums Resource
     http://jsonplaceholder.apiary.io/v1/albums/1
+
+# Group Comments
+TODO: Comments Resource
+    http://jsonplaceholder.apiary.io/v1/comments/1
 
 # Group Photos
 TODO: Photos Resource
     http://jsonplaceholder.apiary.io/photos/1
 
-# Group Users
-TODO: User Resource
-    http://jsonplaceholder.apiary.io/v1/users/1
-
 # Group Todos
 TODO: Todos Resource
     http://jsonplaceholder.apiary.io/v1/todos/1
 
+# Group Users
+TODO: User Resource
+    http://jsonplaceholder.apiary.io/v1/users/1
 
 
+# Group Additional Information
 
+## Allowed HTTPs requests:
+
+    [POST]:     To create a resource
+    [GET]:      To read a resource or list of resources
+    [PUT]:      To update a resource
+    [DELETE]:   To delete a resource
+
+## Description Of Usual Server Responses
+
+    - 200 `OK` - the request was successful.
+    - 201 `Created` - the request was successful and a resource was created.
+    - 204 `No Content` - the request was successful but there is no representation to return (i.e. the response is empty).
+    - 400 `Bad Request` - the request could not be understood or was missing required parameters.
+    - 401 `Unauthorized` - authentication failed or user doesn't have permissions for requested operation.
+    - 403 `Forbidden` - access denied.
+    - 404 `Not Found` - resource was not found
+    - 405 `Method Not Allowed` - requested method is not supported for resource.
+    - 409 `Conflict` - the request could not be completed due to a conflict with the current state of the resource.
+
+## Suggestions for API Design
+
+    - Be RESTful
+    - Only 2 URLs
+    - No verbs
+    - Use nouns as plurals
+    - Concrete over abstract resources
+    - Follow JavaScript naming conventions
+    - Sweep complexity behind the '?'
+    - Borrow from leading APIs
+    - Account for exceptional clients
+    - Add virtualization layer
+
+    (Excerpt from API Design by Apigee)
+
+## Postman REST Client collection
+
+    https://www.getpostman.com/collections/3452686771065a7c2762
+
+## API testing
+
+### [Dredd](https://github.com/apiaryio/dredd) enables documentation-driven development and test-driven development of your APIs.
+
+Check this blog post: [How To Test REST API with API Blueprint and Dredd](http://blog.apiary.io/2013/10/17/How-to-test-api-with-api-blueprint-and-dredd/)
+
+    $ dredd apiary.apib http://localhost:3000/
