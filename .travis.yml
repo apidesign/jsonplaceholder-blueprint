@@ -1,8 +1,14 @@
-language: node_js
+language: "node_js"
 node_js:
   - "0.11"
   - "0.10"
 before_install:
-  - npm install -g dredd
+  - "npm install -g dredd"
 script: 
-  - dredd apiary.apib https://jsonplaceholder.apiary-mock.com
+  - "dredd apiary.apib https://jsonplaceholder.apiary-mock.com"
+notifications:
+  email:
+    recipients:
+      - "alert@worker.com"
+    on_success: change
+    on_failure: always
