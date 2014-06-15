@@ -34,9 +34,6 @@ Returns
     POST http://jsonplaceholder.apiary.io/v1/posts
 
 + Request JSON Message
-    + Headers
-    
-            Accept: application/json
 
     + Body
 
@@ -44,27 +41,23 @@ Returns
 
 
 + Response 201 (application/json)
-    ```json
+
         {
           "id": 134985902,
           "title": "foo",
           "body": "bar",
           "userId": 1
         }
-    ```
+
 
 ### Listing Posts [GET]
 Listing resources
 
     GET http://jsonplaceholder.apiary.io/v1/posts
 
-+ Request JSON Message
-    + Headers
-
-            Accept: application/json
 
 + Response 200 (application/json)
-    ```json
+
         [
             {   
                 "id":1,
@@ -85,7 +78,7 @@ Listing resources
                 "userId": 3
             }
         ]
-    ```
+
 
 ## /v1/posts/{id}
 
@@ -98,14 +91,14 @@ Showing a resource
     + id (required, integer) ... Post ID
 
 + Response 200 (application/json)
-    ```json
-    {
-        "id": 1,
-        "title": "quas laboriosam ea",
-        "body": "earum inventore sapiente error nesciunt ut perferendis soluta suscipit dicta nemo at dolorem eveniet maxime ab labore est eligendi molestias aliquam sapiente",
-        "userId": 1
-    }
-    ```
+
+        {
+            "id": 1,
+            "title": "quas laboriosam ea",
+            "body": "earum inventore sapiente error nesciunt ut perferendis soluta suscipit dicta nemo at dolorem eveniet maxime ab labore est eligendi molestias aliquam sapiente",
+            "userId": 1
+        }
+
 
 ### Update a Post [PUT]
 Updating a resource
@@ -122,14 +115,14 @@ Updating a resource
     + id (required, integer) ... Post ID
 
 + Response 200 (application/json)
-    ```json
-    {
-        "id": 1,
-        "title": "foo",
-        "body": "bar",
-        "userId": 1
-    }
-    ```
+
+        {
+            "id": 1,
+            "title": "foo",
+            "body": "bar",
+            "userId": 1
+        }
+
 
 ### Delete a Post [DELETE]
 Deleting a resource
