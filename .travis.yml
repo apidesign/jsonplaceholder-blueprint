@@ -4,7 +4,7 @@ node_js:
 before_install:
   - "npm install -g dredd"
 script: 
-  - "dredd apiary.apib https://jsonplaceholder.apiary-mock.com"
+  - "dredd apiary.apib https://jsonplaceholder.apiary.io"
 notifications:
   email:
     recipients:
