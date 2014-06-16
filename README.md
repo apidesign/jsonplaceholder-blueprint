@@ -2,7 +2,7 @@
 
 Apiary API Blueprint for simple mock REST API Server. 
 
-To import the API requests collections into Postman REST client, use the Public URL https://www.getpostman.com/collections/8b429b03564d6f56d376 or the API directory in Postman Packaged App.
+To import the API requests collections into Postman REST client, use the Public URL https://www.getpostman.com/collections/95d86776309854b610dd or the API directory in Postman Packaged App.
 
 ### Credits:
 
