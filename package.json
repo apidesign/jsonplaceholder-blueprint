@@ -5,16 +5,7 @@
   "scripts": {
     "test": "dredd apiary.apib https://jsonplaceholder.apiary.io"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/gdumitrescu/jsonplaceholder-blueprint.git"
-  },
-  "author": "Gabriel Dumitrescu",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/gdumitrescu/jsonplaceholder-blueprint/issues"
-  },
-  "homepage": "https://github.com/gdumitrescu/jsonplaceholder-blueprint",
   "dependencies": {
     "dredd": "^0.3.2"
   }
