@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Apiary API Blueprint for simple mock REST API Server.",
   "scripts": {
-    "test": "dredd apiary.apib https://jsonplaceholder.apiary-mock.com --sorted"
+    "test": "dredd apiary.apib https://jsonplaceholder.apiary.io --sorted"
   },
   "license": "MIT",
   "dependencies": {
