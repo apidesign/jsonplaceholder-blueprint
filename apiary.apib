@@ -61,7 +61,7 @@ Create a Post
 + Response 201 (application/json)
 
         {
-          "id": 1,
+          "id": 4,
           "title": "foo",
           "body": "bar",
           "userId": 1
@@ -71,7 +71,7 @@ Create a Post
 ## /v1/posts/{id}
 
 + Parameters
-    + id (required, integer, `1`) ... Post ID as numeric value
+    + id (required, integer, `4`) ... Post ID as numeric value
     
 ### GET
 Retrieve a Post
@@ -82,7 +82,7 @@ Retrieve a Post
 + Response 200 (application/json)
 
         {
-            "id": 1,
+            "id": 4,
             "title": "quas laboriosam ea",
             "body": "earum inventore sapiente error nesciunt ut perferendis soluta suscipit dicta nemo at dolorem eveniet maxime ab labore est eligendi molestias aliquam sapiente",
             "userId": 1
@@ -96,12 +96,12 @@ Update a Post
 
 + Request (application/json)
 
-        { "id": 1, "title": "foo", "body": "baz', "userId": 1 }
+        { "id": 4, "body": "baz' }
 
 + Response 200 (application/json)
 
         {
-            "id": 1,
+            "id": 4,
             "title": "foo",
             "body": "baz",
             "userId": 1
@@ -113,7 +113,7 @@ Deleting a Post
     Sample Request: 
     [DELETE] http://jsonplaceholder.apiary.io/v1/posts/1
 
-+ Response 204 (application/json)
++ Response 204
 
 
 # Group Albums
