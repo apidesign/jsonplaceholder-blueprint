@@ -22,7 +22,8 @@ Inspired by [JSONPlaceholder](https://github.com/typicode/jsonplaceholder)
 ### GET
 Retrieve Posts
 
-    Sample Request: [GET] http://jsonplaceholder.apiary.io/v1/posts
+    Sample Request: 
+    [GET] http://jsonplaceholder.apiary.io/v1/posts
 
 + Response 200 (application/json)
 
@@ -50,13 +51,12 @@ Retrieve Posts
 ### POST
 Create a Post
 
-    Sample Request: [POST] http://jsonplaceholder.apiary.io/v1/posts
+    Sample Request: 
+    [POST] http://jsonplaceholder.apiary.io/v1/posts
 
 + Request (application/json)
 
-    + Body
-
-            { "title": "foo", "body": "bar", "userId": 1 }
+        { "title": "foo", "body": "bar", "userId": 1 }
 
 + Response 201 (application/json)
 
@@ -76,7 +76,8 @@ Create a Post
 ### GET
 Retrieve a Post
 
-    Sample Request: [GET] http://jsonplaceholder.apiary.io/v1/posts/1
+    Sample Request: 
+    [GET] http://jsonplaceholder.apiary.io/v1/posts/1
 
 + Response 200 (application/json)
 
@@ -90,13 +91,12 @@ Retrieve a Post
 ### PUT
 Update a Post
 
-    Sample Request: [PUT] http://jsonplaceholder.apiary.io/v1/posts/1
+    Sample Request: 
+    [PUT] http://jsonplaceholder.apiary.io/v1/posts/1
 
 + Request (application/json)
 
-    + Body
-
-            { "id": 1, "title": "foo", "body": "baz', "userId": 1 }
+        { "id": 1, "title": "foo", "body": "baz', "userId": 1 }
 
 + Response 200 (application/json)
 
@@ -110,12 +110,10 @@ Update a Post
 ### DELETE
 Deleting a Post
 
-    Sample Request: [DELETE] http://jsonplaceholder.apiary.io/v1/posts/1
+    Sample Request: 
+    [DELETE] http://jsonplaceholder.apiary.io/v1/posts/1
 
-
-+ Response 200 (application/json)
-    
-        { "message" : "deleted" }
++ Response 204 (application/json)
 
 
 # Group Albums
