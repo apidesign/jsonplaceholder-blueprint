@@ -14,47 +14,15 @@ HOST: https://www.google.com
 ### Credits
 Inspired by [JSONPlaceholder](https://github.com/typicode/jsonplaceholder)
 
+
 # Group Posts
 
 ## /v1/posts
 
-### Creating Post [POST]
-Creating a resource
+### GET
+Retrieve Posts
 
-Returns
-    ```
-    {
-      "id": 134985902, // Random id
-      "title": "foo",
-      "body": "bar",
-      "userId: 1
-    }
-    ```
-
-    POST http://jsonplaceholder.apiary.io/v1/posts
-
-+ Request JSON Message
-
-    + Body
-
-            { "title": "foo", "body": "bar", "userId": 1 }
-
-
-+ Response 201 (application/json)
-
-        {
-          "id": 134985902,
-          "title": "foo",
-          "body": "bar",
-          "userId": 1
-        }
-
-
-### Listing Posts [GET]
-Listing resources
-
-    GET http://jsonplaceholder.apiary.io/v1/posts
-
+    Sample Request: [GET] http://jsonplaceholder.apiary.io/v1/posts
 
 + Response 200 (application/json)
 
@@ -79,16 +47,36 @@ Listing resources
             }
         ]
 
+### POST
+Create a Post
+
+    Sample Request: [POST] http://jsonplaceholder.apiary.io/v1/posts
+
++ Request (application/json)
+
+    + Body
+
+            { "title": "foo", "body": "bar", "userId": 1 }
+
++ Response 201 (application/json)
+
+        {
+          "id": 1,
+          "title": "foo",
+          "body": "bar",
+          "userId": 1
+        }
+
 
 ## /v1/posts/{id}
 
-### Retrieve a Post [GET]
-Showing a resource
-
-    GET http://jsonplaceholder.apiary.io/v1/posts/1
-
 + Parameters
-    + id (required, integer) ... Post ID
+    + id (required, integer, `1`) ... Post ID as numeric value
+    
+### GET
+Retrieve a Post
+
+    Sample Request: [GET] http://jsonplaceholder.apiary.io/v1/posts/1
 
 + Response 200 (application/json)
 
@@ -99,43 +87,36 @@ Showing a resource
             "userId": 1
         }
 
+### PUT
+Update a Post
 
-### Update a Post [PUT]
-Updating a resource
+    Sample Request: [PUT] http://jsonplaceholder.apiary.io/v1/posts/1
 
-    PUT http://jsonplaceholder.apiary.io/v1/posts/1
-
-+ Request JSON Message
++ Request (application/json)
 
     + Body
 
-            { "id": 1, "title": "foo", "body": "bar', "userId": 1 }
-
-+ Parameters
-    + id (required, integer) ... Post ID
+            { "id": 1, "title": "foo", "body": "baz', "userId": 1 }
 
 + Response 200 (application/json)
 
         {
             "id": 1,
             "title": "foo",
-            "body": "bar",
+            "body": "baz",
             "userId": 1
         }
 
+### DELETE
+Deleting a Post
 
-### Delete a Post [DELETE]
-Deleting a resource
+    Sample Request: [DELETE] http://jsonplaceholder.apiary.io/v1/posts/1
 
-    DELETE http://jsonplaceholder.apiary.io/v1/posts/1
-
-+ Parameters
-    + id (required, integer) ... Post ID
 
 + Response 200 (application/json)
-    ```json
+    
         { "message" : "deleted" }
-    ```
+
 
 # Group Albums
 TODO: Albums Resource
