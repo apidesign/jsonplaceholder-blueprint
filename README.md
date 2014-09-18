@@ -1,7 +1,7 @@
 ## jsonplaceholder-blueprint
 
 [![Build Status](https://travis-ci.org/gdumitrescu/jsonplaceholder-blueprint.svg?branch=master)](https://travis-ci.org/gdumitrescu/jsonplaceholder-blueprint)
-[![Build Status](https://api.shippable.com/projects/53d2935ec6c02933026f3797/badge/master)](https://www.shippable.com/projects/53d2935ec6c02933026f3797)
+[![Build Status](https://api.shippable.com/projects/541b16beac22859af744281c/badge?branchName=master)](https://app.shippable.com/projects/541b16beac22859af744281c/builds/latest)
 
 Apiary API Blueprint for simple mock REST API Server. 
 
