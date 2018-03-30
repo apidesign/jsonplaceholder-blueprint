@@ -7,6 +7,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "dredd": "^0.6.0"
+    "dredd": "^5.0.0"
   }
 }
